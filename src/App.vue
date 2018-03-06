@@ -14,20 +14,21 @@ export default {
   name: "app",
   data() {
     return {
-      plants: [{ id: 0, name: "Aloe" }, { id: 1, name: "Basil" }]
+      plants: [{ id: 0, name: "Aloe" }, { id: 1, name: "Basil" }, { id: 2, name: "Mint"}] 
     };
   }
 };
 </script>
 
 <style lang="scss">
-$primary: rgb(10, 206, 108);
+$primary: #38485E;
+$accent: #46CFB6;
 ion-app {
   font-family: "Roboto", sans-serif;
 }
 ion-toolbar {
   .toolbar-background {
-    background: linear-gradient($primary, rgb(18, 161, 82));
+    background: linear-gradient($accent, darken($accent,15));
   }
   .toolbar-title {
     color: white;
